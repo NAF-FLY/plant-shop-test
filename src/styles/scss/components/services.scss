@@ -1,0 +1,53 @@
+@import '../config/variables';
+
+.services {
+	display: flex;
+	max-width: 1170px;
+	width: 100%;
+	margin: 0 auto;
+	gap: 20px;
+	justify-content: space-between;
+
+	&__item {
+		padding: 22px 16px 21px;
+		border: 1px solid $color-border;
+		cursor: pointer;
+		transition: background 0.3s ease-in-out;
+
+		&:hover {
+			background: $color-background;
+		}
+	}
+
+	&__item-top {
+		display: flex;
+		gap: 16px;
+		margin-bottom: 16px;
+	}
+
+	&__item-title {
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 24px;
+		color: $color-primary;
+	}
+
+	&__item-description {
+		font-weight: 400;
+		font-size: 10px;
+		line-height: 16px;
+		color: $color-description;
+	}
+}
+
+@media (max-width: 1170px) {
+	.services {
+		width: 90%;
+		flex-wrap: wrap;
+
+		&__item {
+			width: 45%;
+			margin-bottom: 0;
+		}
+	}
+}

@@ -1,0 +1,27 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+	border: none;
+	outline: none;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', 'Segoe UI', sans-serif, system-ui, -apple-system,
+		Roboto;
+}
+
+button {
+	font-family: inherit;
+}

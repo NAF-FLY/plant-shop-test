@@ -1,0 +1,53 @@
+.header {
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 40px;
+	z-index: 1;
+
+	&__logo,
+	&__form-button {
+		cursor: pointer;
+	}
+
+	&__form-button {
+		text-align: center;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 20px;
+		color: $color-accent;
+		background: $color-primary;
+		padding: 8px 20px;
+		outline: none;
+		border: 0;
+		width: 111px;
+
+		&:hover {
+			transition: 0.5s;
+			text-decoration: underline;
+		}
+	}
+}
+
+@media (max-width: 1170px) {
+	.header {
+		position: static;
+		transform: translateX(0);
+		width: 77.5%;
+		padding: 10px 0;
+	}
+}
+
+@media (max-width: 600px) {
+	.header {
+		width: 100%;
+		padding: 10px;
+		box-sizing: border-box;
+	}
+}

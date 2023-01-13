@@ -1,0 +1,14 @@
+@import '../config/variables';
+
+.select {
+	border: 1px solid $color-border;
+	padding: 6px 18px 6px 7px;
+	cursor: pointer;
+
+	&__item {
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 15px;
+		color: $color-title;
+	}
+}

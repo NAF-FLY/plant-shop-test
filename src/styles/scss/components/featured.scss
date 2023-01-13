@@ -1,0 +1,75 @@
+@import '../config/variables';
+
+.featured {
+	max-width: 1170px;
+	width: 100%;
+	margin: 80px auto 349px;
+
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 16px;
+		border-bottom: 1px solid $color-border;
+	}
+
+	&__header-title {
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+		color: $color-title;
+	}
+
+	&__list {
+		display: flex;
+		margin-top: 24px;
+		gap: 20px;
+	}
+
+	&__list-item {
+		cursor: pointer;
+
+		&_img {
+			width: 100%;
+			height: auto;
+			background: $color-background;
+			transition: transform 0.3s ease-in-out;
+
+			&:hover {
+				transform: scale(1.05);
+			}
+		}
+
+		&_title,
+		&_price {
+			font-size: 16px;
+			line-height: 20px;
+			color: $color-title;
+			text-align: center;
+		}
+
+		&_title {
+			font-weight: 400;
+			margin-top: 16px;
+		}
+
+		&_price {
+			font-weight: 600;
+			margin-top: 8px;
+		}
+	}
+}
+
+@media (max-width: 1170px) {
+	.featured {
+		width: 77.5%;
+
+		&__list {
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+
+		&__list-item {
+			margin-bottom: 20px;
+		}
+	}
+}

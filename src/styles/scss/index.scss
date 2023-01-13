@@ -1,0 +1,17 @@
+// config styles
+@import './config/reset';
+@import './config/fonts';
+@import './config/variables';
+
+// components styles
+@import './components/header';
+@import './components/hero';
+@import './components/slider';
+@import './components/services';
+@import './components/featured';
+@import './components/select';
+@import './components/background-popup';
+@import './components/popup-form';
+@import './components/popup-table';
+@import './components/spinner';
+@import './components/hide';

@@ -1,0 +1,68 @@
+.popup-table {
+	background: #ffffff;
+	box-shadow: 3px 4px 16px 4px rgba(155, 155, 155, .25);
+	border-radius: 8px;
+	width: 100%;
+	max-width: 500px;
+	max-height: 700px;
+
+	&__header {
+		display: flex;
+		flex-direction: row-reverse;
+		padding: 20px 23px 4px;
+	}
+
+	&__close-icon {
+		cursor: pointer;
+		padding: 3px;
+		border-radius: 3px;
+
+		&:hover {
+			border-radius: 100%;
+			background: #eeeeee;
+		}
+	}
+
+	&__container {
+		padding: 20px;
+	}
+
+	&__table {
+		width: 100%;
+		border-collapse: collapse;
+	}
+
+	&__body {
+		overflow-y: auto;
+	}
+
+	&__head &__row {
+		color: $color-accent;
+		font-weight: bold;
+		background: $color-primary;
+	}
+
+	&__head &__cell {
+		padding: 0px 5px;
+		border: 1px solid #178185;
+	}
+
+	&__body &__cell {
+		border: 1px solid #e8e9eb;
+	}
+
+	&__body &__row:nth-child(2n) {
+		background: #f4f4f4;
+	}
+
+	&__body &__row:hover {
+		background: #ebffe8;
+		cursor: pointer;
+	}
+
+	&__cell {
+		text-align: center;
+		font-size: 16px;
+		line-height: 30px;
+	}
+}
