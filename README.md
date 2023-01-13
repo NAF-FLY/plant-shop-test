@@ -1,2 +1,2 @@
 # plant-shop-test
-Live site - https://incomparable-pothos-b18a46.netlify.app/
+Live site - https://lovely-hotteok-5a246e.netlify.app
