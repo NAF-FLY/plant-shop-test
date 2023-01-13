@@ -13,6 +13,7 @@ const closeBtn1 = document.querySelector('.popup-table__close-icon')
 
 const closePopup = () => {
 	// закрытие модального окна
+	bodyScroll.enable()
 	bgPopup.classList.add('hide')
 	popupForm.classList.add('hide')
 }
